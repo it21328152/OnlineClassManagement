@@ -1,0 +1,50 @@
+.sidebar-container{
+    background-color: black;
+    color: white;
+    width: 250px;
+    height: calc(100vh);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
+.nav-option {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 30px;
+    gap: 20px;
+    width: 250px;
+}
+
+.sidebar-container::-webkit-scrollbar{
+    display: none;
+    
+}
+
+.nav-option:hover, .nav-option:hover i.fa {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+}
+.nav-option i.fa{
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+}
+
+/*media*/
+
+@media screen and (max-width: 768px) {
+    .navCollapse{
+        width: 80px;
+    }
+    .navCollapse .nav-option h3{
+        display: none;
+    }
+    .navCollapse .nav-option {
+        padding: 28px;
+    }
+}
+
+   
